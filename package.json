@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "rm -rf build && webpack && copy .\\src\\index.html .\\build",
+    "postinstall": "webpack && copy .\\src\\index.html .\\build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,13 +27,13 @@
     "@types/react-dom": "^16.0.7",
     "awesome-typescript-loader": "^5.0.0",
     "source-map-loader": "^0.2.3",
-    "typescript": "^3.1.1",
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.0.6"
+    "typescript": "^3.1.1"
   },
   "dependencies": {
     "express": "^4.16.3",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.0.6"
   }
 }
