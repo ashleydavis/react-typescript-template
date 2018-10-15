@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A template for creating web apps based on React and TypeScript.",
   "scripts": {
-    "build": "webpack",
+    "start": "node index.js",
+    "build": "rm -rf build && webpack && copy .\\src\\index.html .\\build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "webpack-cli": "^3.0.6"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   }
