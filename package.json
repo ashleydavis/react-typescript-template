@@ -1,0 +1,36 @@
+{
+  "name": "react-typescript-template",
+  "version": "1.0.0",
+  "description": "A template for creating web apps based on React and TypeScript.",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleydavis/react-typescript-template.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "ashley@codecapers.com.au",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashleydavis/react-typescript-template/issues"
+  },
+  "homepage": "https://github.com/ashleydavis/react-typescript-template#readme",
+  "devDependencies": {
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "awesome-typescript-loader": "^5.0.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^3.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.0.6"
+  },
+  "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
+}
