@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "rm -rf build && webpack && copy .\\src\\index.html .\\build",
-    "todo:postinstall": "webpack --config=webpack.config.js && copy .\\src\\index.html .\\build",
+    "postinstall": "webpack && copy .\\src\\index.html .\\build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
