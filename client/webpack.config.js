@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/build"
+        path: path.join(path.dirname(__dirname), "build", "client"),
     },
 
     // Enable sourcemaps for debugging webpack's output.

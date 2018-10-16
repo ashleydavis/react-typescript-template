@@ -6,15 +6,29 @@ A template for creating web apps based on React and TypeScript.
 
 Clone repo, open command line, change to repo directory.
 
-Install dependencies:
+Install dependencies for server:
 
+    cd server
     npm install
+
+Then install dependencies for the client:
+
+    cd client
+    npm install
+
+## Build
+
+Build the server app:
+
+    cd server
+    npm run build
 
 Build the web app:
 
+    cd client
     npm run build
 
-## Run
+## Run (revise this)
 
 Install live-server globally (or use another web server):
 
