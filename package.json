@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/ashleydavis/react-typescript-template#readme",
   "devDependencies": {
-    "@types/react": "^16.4.13",
-    "@types/react-dom": "^16.0.7"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -34,7 +32,9 @@
     "webpack-cli": "^3.0.6",
     "awesome-typescript-loader": "^5.0.0",
     "source-map-loader": "^0.2.3",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7"
   },
   "engines" : { "node" : "8.11.1" }
 }
