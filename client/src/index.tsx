@@ -1,9 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { AppUI } from './app/app';
 
 declare const document: HTMLDocument;
 
 ReactDOM.render(
-    <p>Hello React</p>,
+    <AppUI />,
     document.getElementById("root")
 );
