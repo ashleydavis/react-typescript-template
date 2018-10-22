@@ -32,27 +32,17 @@ To compile just with TypeScript (either client or server)
 
     npx tsc
 
-## Run the client (revise this)
+## Run the server (for test/prod)
 
-Install live-server globally (or use another web server):
+    npm start
 
-    npm install -g live-server
+## Run the server (for development)
 
-From the same directory as the client start live-server:
+    npm run start:dev
 
-    cd client
-    live-server
+## Run the client (for development)
 
-A browser is opened and navigated automatically to your template React app.
-
-## Run client and server (revise this)
-
-Just run index.js
-
-    ts-node index.js
-
-Or
-
+    cd client 
     npm start
 
 ## Deploy to Azure
