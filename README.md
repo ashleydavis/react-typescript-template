@@ -28,17 +28,32 @@ Build the web app:
     cd client
     npm run build
 
-## Run (revise this)
+To compile just with TypeScript (either client or server)
+
+    npx tsc
+
+## Run the client (revise this)
 
 Install live-server globally (or use another web server):
 
     npm install -g live-server
 
-From the same directory as the repo start live-server:
+From the same directory as the client start live-server:
 
+    cd client
     live-server
 
 A browser is opened and navigated automatically to your template React app.
+
+## Run client and server (revise this)
+
+Just run index.js
+
+    ts-node index.js
+
+Or
+
+    npm start
 
 ## Deploy to Azure
 
