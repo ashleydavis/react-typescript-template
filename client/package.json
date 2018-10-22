@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A template for creating web apps based on React and TypeScript.",
   "scripts": {
-    "build": "rm -rf ../build/client && webpack && cp ./src/index.html ../build/client",
+    "build": "rm -rf ../build/client && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "@types/react-dom": "^16.0.9",
     "@types/react-router-dom": "^4.3.1",
     "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^4.4.2",
     "moment": "^2.22.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

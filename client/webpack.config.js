@@ -1,10 +1,13 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const outputDir = path.join(path.dirname(__dirname), "build", "client");
 
 module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: path.join(path.dirname(__dirname), "build", "client"),
+        path: outputDir,
     },
 
     // Enable sourcemaps for debugging webpack's output.
@@ -35,4 +38,14 @@ module.exports = {
         "react-dom": "ReactDOM"
     }
     */
+
+    plugins: [
+        new CopyWebpackPlugin([
+            // Copy index.html to output.
+            {
+                from: "./src/index.html",
+                to: outputDir,
+            }
+        ]),
+    ],
 };
