@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const outputDir = path.join(path.dirname(__dirname), "build", "client");
@@ -10,12 +11,15 @@ module.exports = {
         path: outputDir,
     },
 
+    mode: "development",
+
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
     devServer: {
         contentBase: outputDir,
-    },    
+        hotOnly: true,
+    },
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
@@ -51,5 +55,8 @@ module.exports = {
                 to: outputDir,
             }
         ]),
+
+        // https://hackernoon.com/react-with-typescript-and-webpack-654f93f34db6
+        new webpack.HotModuleReplacementPlugin(),
     ],
 };

@@ -8,3 +8,9 @@ ReactDOM.render(
     <AppUI />,
     document.getElementById("root")
 );
+
+declare let module: any;
+
+if (module.hot) {
+    module.hot.accept();
+}
