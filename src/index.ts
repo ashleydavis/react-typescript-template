@@ -14,7 +14,7 @@ process.on('uncaughtException', function (err) {
     console.error('Uncaught Exception: ' + err.message + '\r\n' + err.stack);
 });
 
-app.get('/example-rest-api', function (req, res) {
+app.get('/api/example-rest-api', function (req, res) {
 	res.json({ hello: 'computer'});
 });
 

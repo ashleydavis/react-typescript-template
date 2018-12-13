@@ -19,6 +19,14 @@ module.exports = {
     devServer: {
         contentBase: outputDir,
         hotOnly: true,
+
+        // https://medium.com/@drgenejones/proxying-an-external-api-with-webpack-serve-code-and-a-restful-data-from-separate-endpoints-4da9b8daf430
+        proxy: {
+            '/api': {
+                target: 'http://localhost:3000',
+                secure: false
+            }
+        },
     },
 
     resolve: {
