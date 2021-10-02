@@ -2,6 +2,8 @@
 
 A template for creating web apps based on React and TypeScript.
 
+[Click here to support my work](https://www.codecapers.com.au/about#support-my-work)
+
 ## Setup
 
 Clone repo, open command line, change to repo directory.
